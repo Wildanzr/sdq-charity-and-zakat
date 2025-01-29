@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .primary-gradient {
+    background: linear-gradient(129deg, #2e6e65 0%, #86ee60 100%);
+  }
+
+  .m-title-hero {
+    @apply font-manrope font-semibold text-[32px];
+  }
+
+  .m-title-page {
+    @apply font-manrope font-semibold text-[26px];
+  }
+
+  .m-heading {
+    @apply font-manrope font-semibold text-[24px];
+  }
+
+  .m-subheading {
+    @apply font-manrope font-bold text-[20px];
+  }
+
+  .m-body-strong {
+    @apply font-manrope font-semibold text-[18px];
+  }
+
+  .m-body-base {
+    @apply font-manrope font-normal text-[16px];
+  }
+
+  .m-body-small {
+    @apply font-manrope font-normal text-[14px];
+  }
+
+  .m-body-link {
+    @apply font-manrope font-normal text-[12px];
+  }
+
+  .m-label {
+    @apply font-manrope font-normal text-[10px];
+  }
+}
