@@ -1,6 +1,7 @@
-import { Prop } from '@nestjs/mongoose';
+import { Prop, SchemaFactory } from '@nestjs/mongoose';
 import crypto from 'crypto';
 import { CreateUpdate } from './create-update.schema';
+import { HydratedDocument } from 'mongoose';
 
 export class Identity extends CreateUpdate {
   @Prop({
@@ -25,3 +26,6 @@ export class Identity extends CreateUpdate {
   })
   secret_key: string;
 }
+
+export type IdentityDocument = HydratedDocument<Identity>;
+export const IdentitySchema = SchemaFactory.createForClass(Identity);
