@@ -1,5 +1,5 @@
 import { Prop, SchemaFactory } from '@nestjs/mongoose';
-import crypto from 'crypto';
+import * as crypto from 'crypto';
 import { CreateUpdate } from './create-update.schema';
 import { HydratedDocument } from 'mongoose';
 
